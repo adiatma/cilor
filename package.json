@@ -1,6 +1,6 @@
 {
   "name": "@adiatma2019/cilor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/cilor.js",
   "license": "MIT",
   "bin": "./src/cilor.js",
@@ -13,6 +13,7 @@
     "webpack": "^4.41.0",
     "webpack-dev-server": "^3.8.2"
   },
-  "description": "CLI for compile react project",
-  "author": "adiatma <adiatma.kamaarudin@ralali.com>"
+  "description": "CLI to compiler react project",
+  "author": "adiatma <adiatma.kamaarudin@ralali.com>",
+  "repository": "https://github.com/adiatma/cilor.git"
 }
