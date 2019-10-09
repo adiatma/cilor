@@ -91,7 +91,7 @@ function createWebpackConfig(config) {
     },
     output: {
       path: resolveApp('build'),
-      filename: `[hash].${config.appName}.js`,
+      filename: '[hash].[name].js',
       publicPath: '/',
     },
     plugins: [createHTML(config.htmlConfig || {})],
@@ -113,7 +113,7 @@ function createWebpackDevServerConfig(config) {
     },
     output: {
       path: resolveApp('build'),
-      filename: `${config.appName}.js`,
+      filename: '[name].js',
       publicPath: '/',
     },
     plugins: [createHTML(config.htmlConfig || {})],
