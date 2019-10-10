@@ -9,9 +9,9 @@
 Please see the [example](https://github.com/adiatma/example-use-cilor).
 
 ## Example.
-Create file `config.js` in your directory.
+Create file `cilorConfig.js` in your directory.
 
-```
+```js
 // cilorConfig.js
 const path = require('path')
 
@@ -28,7 +28,7 @@ module.exports = {
 
 Create file `index.js`.
 
-```
+```js
 // index.js
 import React from 'react'
 import ReactDOM from 'react'
@@ -38,8 +38,8 @@ const mountElement = document.getElementById('app)
 ReactDOM.render(<App />, mountElement)
 ```
 
-Open your `package.json`, and than add this command to scripts.
-```
+Open your `package.json`, and add this command below.
+```json
 // package.json
 {
   "scripts": {
