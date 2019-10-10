@@ -9,6 +9,14 @@
 Please see the [example](https://github.com/adiatma/example-use-cilor).
 
 ## Example.
+
+```bash
+mkdir react-project
+cd react-project
+yarn add -D @adiatma2019/cilor
+yarn add react react-dom
+```
+
 Create file `cilorConfig.js` in your directory.
 
 ```js
@@ -34,7 +42,7 @@ import React from 'react'
 import ReactDOM from 'react'
 
 const App = () => <div>App build with, ReactJS</div>
-const mountElement = document.getElementById('app)
+const mountElement = document.getElementById('app')
 ReactDOM.render(<App />, mountElement)
 ```
 
