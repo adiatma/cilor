@@ -1,6 +1,6 @@
 # @adiatma2019/cilor
 
-CLI to compile react project.
+⚡️CLI to compile react project.
 
 ## How to use?
 
@@ -8,33 +8,43 @@ CLI to compile react project.
 
 Please see the [example](https://github.com/adiatma/example-use-cilor).
 
-## Config
+## Example.
 Create file `config.js` in your directory.
 
 ```
-// config.js
+// cilorConfig.js
 const path = require('path')
 
 module.exports = {
   webpack: {
-    entry: path.resolve(__dirname, 'src/index.js'),
+    entry: path.resolve(__dirname, 'index.js'),
   },
-  server: {
-    port: 4000,
-    compress: true,
+  htmlConfig: {
+    title: 'Type your title here!',
+    htmlElement: 'app', // default root
   }
 }
 ```
 
-## Scripts
-Open your file `package.json`.
+Create file `index.js`.
+
+```
+// index.js
+import React from 'react'
+import ReactDOM from 'react'
+
+const App = () => <div>App build with, ReactJS</div>
+const mountElement = document.getElementById('app)
+ReactDOM.render(<App />, mountElement)
+```
+
+Open your `package.json`, and than add this command to scripts.
 ```
 // package.json
 {
-  ...,
-  scripts: {
-    "start": "cilor config.js dev",
-    "build": "cilor config.js prod"
+  "scripts": {
+    "start": "cilor cilorConfig.js",
+    "build": "cilor cilorConfig.js prod"
   }
 }
 ```
