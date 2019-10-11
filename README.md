@@ -4,11 +4,19 @@
 
 ## Feature
 
+<<<<<<< HEAD
 + [x] support module hot replacement.
 + [x] support flow.
 + [x] support styled-components.
 + [ ] support eslint in develoment mode.
 + [ ] support monitoring assets.
+=======
+[x] support module hot replacement.
+[x] support flow.
+[x] support styled-components.
+[] support eslint in develoment mode.
+[] support monitoring assets.
+>>>>>>> aca8c4d... fix: bug
 
 ## How to use?
 
