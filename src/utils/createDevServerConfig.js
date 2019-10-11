@@ -9,8 +9,10 @@ function createDevServerConfig(config) {
     useLocalIp: true,
     historyApiFallback: true,
     hot: true,
-    contentBase: config.output.path || pathResolve('build'), // default build
-    ...config,
+    contentBase:
+      config && config.contentBase
+        ? config.contentBase
+        : pathResolve('build'), // default build
   }
 }
 
