@@ -25,7 +25,7 @@ function createConfig(config, mode) {
     plugins: [createHTML(config.htmlConfig)],
     entry: config.entry,
     optimization: {
-      minimize: mode,
+      minimize: true,
       minimizer: [
         new TerserPlugin({
           parallel: true,
