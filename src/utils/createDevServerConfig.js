@@ -8,6 +8,7 @@ function createDevServerConfig(config) {
   return {
     useLocalIp: true,
     historyApiFallback: true,
+    hot: true,
     contentBase: pathResolve('build'),
     ...config,
   }

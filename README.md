@@ -4,17 +4,25 @@
 
 ## How to use?
 
-> Please download `react` and `react-dom` before using `@adiatma2019/cilor`.
-
-Please see the [example](https://github.com/adiatma/example-use-cilor).
+> Please install `react` and `react-dom` with `@adiatma2019/cilor`.
 
 ## Example.
 
 ```bash
 mkdir react-project
 cd react-project
-yarn add -D @adiatma2019/cilor
+```
+
+## Install with yarn
+```bash
+yarn add -D @adiatma201/cilor
 yarn add react react-dom
+```
+## Install with npm
+
+```bash
+npm install --save-dev @adiatma201/cilor
+npm install react react-dom
 ```
 
 Create file `cilorConfig.js` in your directory.
