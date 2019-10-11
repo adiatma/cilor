@@ -2,6 +2,12 @@
 
 ⚡️CLI to compile react project.
 
+## Feature
+
++ support module hot replacement
++ support flow
++ support styled-components
+
 ## How to use?
 
 > Please install `react` and `react-dom` with `@adiatma2019/cilor`.
@@ -32,8 +38,9 @@ Create file `cilor.config.js` in your directory.
 const path = require('path')
 
 module.exports = {
-  webpack: {
-    entry: path.resolve(__dirname, 'index.js'),
+  entry: path.resolve(__dirname, 'index.js'),
+  output: {
+    path: path.resolve(__dirname, 'output'),
   },
   htmlConfig: {
     title: 'Type your title here!',
