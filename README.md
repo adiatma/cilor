@@ -21,13 +21,13 @@ cd react-project
 
 ## Install with yarn
 ```bash
-yarn add -D @adiatma201/cilor
+yarn add -D @adiatma2019/cilor
 yarn add react react-dom
 ```
 ## Install with npm
 
 ```bash
-npm install --save-dev @adiatma201/cilor
+npm install --save-dev @adiatma2019/cilor
 npm install react react-dom
 ```
 
