@@ -11,7 +11,7 @@ function createConfig(config, mode) {
   const defaultConfig = {
     mode: mode,
     module: {
-      rules: [babelLoader()],
+      rules: [babelLoader({ mode })],
     },
     output: {
       path: pathResolve('build'),

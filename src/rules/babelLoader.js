@@ -1,3 +1,5 @@
+const babelConfig = require('../babel-config')
+
 /**
  * Create rules for babel-loader.
  * @param {Object} options
@@ -8,12 +10,7 @@ function babelLoader(options = {}) {
     test: /\.(js|jsx)$/,
     exclude: /node_modules/,
     loader: require.resolve('babel-loader'),
-    options: {
-      presets: [
-        require.resolve('@babel/preset-env'),
-        require.resolve('@babel/preset-react'),
-      ],
-    },
+    options: babelConfig(options.mode),
     ...options,
   }
 }
