@@ -1,3 +1,5 @@
+const TerserPlugin = require('terser-webpack-plugin')
+
 const createHTML = require('../plugins/createHTML')
 const babelLoader = require('../rules/babelLoader')
 const pathResolve = require('./pathResolve')
@@ -14,12 +16,23 @@ function createConfig(config, mode) {
       rules: [babelLoader(mode)],
     },
     output: {
-      path: pathResolve('build'),
+      path: config.output && config.output.path
+        ? config.output.path
+        : pathResolve('build'), // default build
       filename: '[hash].[name].js',
       publicPath: '/',
     },
     plugins: [createHTML(config.htmlConfig)],
-    ...config.webpack,
+    entry: config.entry,
+    optimization: {
+      minimize: mode,
+      minimizer: [
+        new TerserPlugin({
+          parallel: true,
+          test: /\.js(\?.*)?$/i,
+        })
+      ]
+    }
   }
 
   return defaultConfig
