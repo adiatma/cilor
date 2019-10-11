@@ -4,9 +4,11 @@
 
 ## Feature
 
-+ support module hot replacement
-+ support flow
-+ support styled-components
++ [x] support module hot replacement.
++ [x] support flow.
++ [x] support styled-components.
++ [ ] support eslint in develoment mode.
++ [ ] support monitoring assets.
 
 ## How to use?
 
@@ -41,6 +43,9 @@ module.exports = {
   entry: path.resolve(__dirname, 'index.js'),
   output: {
     path: path.resolve(__dirname, 'output'),
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'output'),
   },
   htmlConfig: {
     title: 'Type your title here!',
