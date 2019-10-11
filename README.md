@@ -29,7 +29,7 @@ module.exports = {
   },
   htmlConfig: {
     title: 'Type your title here!',
-    htmlElement: 'app', // default root
+    elementID: 'app', // default root
   }
 }
 ```
@@ -39,9 +39,17 @@ Create file `index.js`.
 ```js
 // index.js
 import React from 'react'
-import ReactDOM from 'react'
+import ReactDOM from 'react-dom'
 
-const App = () => <div>App build with, ReactJS</div>
+function App() {
+  return (
+    <div>
+      <h1>Hello, ReactJS</h1>
+      <p>Lorem ipsume sit amet dolor</p>
+    </div>
+  )
+}
+
 const mountElement = document.getElementById('app')
 ReactDOM.render(<App />, mountElement)
 ```
@@ -52,7 +60,7 @@ Open your `package.json`, and add this command below.
 {
   "scripts": {
     "start": "cilor cilorConfig.js",
-    "build": "cilor cilorConfig.js prod"
+    "build": "cilor cilorConfig.js build"
   }
 }
 ```

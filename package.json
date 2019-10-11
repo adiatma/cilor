@@ -1,14 +1,18 @@
 {
   "name": "@adiatma2019/cilor",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "main": "src/cilor.js",
   "license": "MIT",
   "bin": "./src/cilor.js",
   "dependencies": {
     "@babel/core": "^7.6.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.3",
+    "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.6.3",
     "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.0",
     "webpack-dev-server": "^3.8.2"
