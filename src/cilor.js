@@ -48,8 +48,8 @@ function init(fileConfig, mode) {
   if (stats.isFile()) {
     if(path.basename(fileConfig) === 'cilorConfig.js') {
       const config = require(pathResolve(fileConfig))
-      if (mode === 'dev') createWebpackDevServerConfig(config)
-      if (mode === 'prod') createWebpackConfig(config)
+      if (mode === 'start') createWebpackDevServerConfig(config)
+      if (mode === 'build') createWebpackConfig(config)
     }
   } else {
     console.log(`Oops, please provide file cilorConfig.js!`)
@@ -57,6 +57,6 @@ function init(fileConfig, mode) {
 }
 
 const fileConfig = process.argv[2]
-const mode = process.argv[3] || 'dev'
+const mode = process.argv[3] || 'start' // default mode development
 
 init(fileConfig, mode)
