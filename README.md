@@ -25,10 +25,10 @@ npm install --save-dev @adiatma201/cilor
 npm install react react-dom
 ```
 
-Create file `cilorConfig.js` in your directory.
+Create file `cilor.config.js` in your directory.
 
 ```js
-// cilorConfig.js
+// cilor.config.js
 const path = require('path')
 
 module.exports = {
@@ -67,8 +67,8 @@ Open your `package.json`, and add this command below.
 // package.json
 {
   "scripts": {
-    "start": "cilor cilorConfig.js",
-    "build": "cilor cilorConfig.js build"
+    "start": "cilor cilor.config.js",
+    "build": "cilor cilor.config.js build"
   }
 }
 ```
