@@ -9,7 +9,7 @@ function createDevServerConfig(config) {
     useLocalIp: true,
     historyApiFallback: true,
     hot: true,
-    contentBase: pathResolve('build'),
+    contentBase: config.output.path || pathResolve('build'), // default build
     ...config,
   }
 }
