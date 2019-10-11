@@ -73,4 +73,6 @@ Open your `package.json`, and add this command below.
 }
 ```
 
+And start with `yarn start` or `npm start` to running development server.
+
 Thanks, feel free to contribute!
