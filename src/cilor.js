@@ -4,6 +4,7 @@ const path = require('path')
 const fs = require('fs')
 const webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
+const pkg = require('../package.json')
 
 const createConfig = require('./utils/createConfig')
 const createCompiler = require('./utils/createCompiler')
@@ -46,17 +47,25 @@ function init(fileConfig, mode) {
   const stats = fs.lstatSync(fileConfig)
 
   if (stats.isFile()) {
-    if(path.basename(fileConfig) === 'cilorConfig.js') {
+    if (path.basename(fileConfig) === 'cilor.config.js') {
       const config = require(pathResolve(fileConfig))
       if (mode === 'start') createWebpackDevServerConfig(config)
       if (mode === 'build') createWebpackConfig(config)
     }
   } else {
-    console.log(`Oops, please provide file cilorConfig.js!`)
+    console.log(`Oops, please provide file cilor.config.js!`)
   }
 }
 
-const fileConfig = process.argv[2]
-const mode = process.argv[3] || 'start' // default mode development
+if (process.argv[2] !== undefined && fs.existsSync(process.argv[2])) {
+  const fileConfig = process.argv[2]
+  const mode = process.argv[3] || 'start' // default mode development
 
-init(fileConfig, mode)
+  init(fileConfig, mode)
+} else {
+  console.log()
+  console.log(`cilor: v${pkg.version}`)
+  console.log()
+  console.log('usage: cilor <file_config>')
+  console.log()
+}
