@@ -4,6 +4,7 @@
 function babelConfig(env) {
   const isEnvDevelopment = env === 'development'
   const isEnvProduction = env === 'production'
+  const isEnvTest = env === '__test__'
 
   const presets = [
     (isEnvProduction || isEnvDevelopment) && [
