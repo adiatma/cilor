@@ -87,4 +87,11 @@ Open your `package.json`, and add this command below.
 
 And start with `yarn start` or `npm start` to running development server.
 
+## How to add testing environment.
+Create `.babelrc.js`.
+```js
+const babelConfig = require('@adiatma2019/cilor/src/babel-config')
+module.exports = babelConfig('__test__')
+```
+
 Thanks, feel free to contribute!
