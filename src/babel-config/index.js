@@ -7,6 +7,14 @@ function babelConfig(env) {
   const isEnvTest = env === '__test__'
 
   const presets = [
+    isEnvTest && [
+      require.resolve('@babel/preset-env'),
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
     (isEnvProduction || isEnvDevelopment) && [
       require.resolve('@babel/preset-env'),
       {
