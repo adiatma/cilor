@@ -2,6 +2,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 
 const createHTML = require('../plugins/createHTML')
 const babelLoader = require('../rules/babelLoader')
+const urlLoader = require('../rules/urlLoader')
 const pathResolve = require('./pathResolve')
 
 /**
@@ -13,7 +14,7 @@ function createConfig(config, mode) {
   const defaultConfig = {
     mode: mode,
     module: {
-      rules: [babelLoader(mode)],
+      rules: [babelLoader(mode), urlLoader()],
     },
     output: {
       path: config.output && config.output.path
@@ -34,6 +35,11 @@ function createConfig(config, mode) {
       ]
     }
   }
+
+  // merge with custom rules
+  config.rules && defaultConfig.module.rules.push(...config.rules)
+  // merge with custom plugins
+  config.plugins && defaultConfig.plugins.push(...config.plugins)
 
   return defaultConfig
 }

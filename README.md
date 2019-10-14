@@ -7,6 +7,7 @@
 + [x] support module hot replacement.
 + [x] support flow.
 + [x] support styled-components.
++ [x] support url-loader and file-loader
 + [ ] support eslint in develoment mode.
 + [ ] support monitoring assets.
 
