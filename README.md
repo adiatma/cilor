@@ -1,13 +1,18 @@
 # @adiatma2019/cilor
 
+![npm](https://img.shields.io/npm/dm/@adiatma2019/cilor)
+![dependencies](https://img.shields.io/librariesio/release/npm/@adiatma2019/cilor)
+![version](https://img.shields.io/npm/v/@adiatma2019/cilor)
+
 ⚡️CLI to compile react project.
 
-## Feature
+## List Features
 
 + [x] support module hot replacement.
 + [x] support flow.
 + [x] support styled-components.
 + [x] support url-loader and file-loader
++ [ ] support alias import.
 + [ ] support eslint in develoment mode.
 + [ ] support monitoring assets.
 
@@ -95,4 +100,6 @@ const babelConfig = require('@adiatma2019/cilor/src/babel-config')
 module.exports = babelConfig('__test__')
 ```
 
-Thanks, feel free to contribute!
+## License
+
+![NPM](https://img.shields.io/npm/l/@adiatma2019/cilor)
