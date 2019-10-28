@@ -4,7 +4,7 @@
 function svgLoader() {
   return {
     test: /\.svg$/,
-    loader: 'svg-inline-loader',
+    loader: require.resolve('svg-inline-loader'),
   }
 }
 
