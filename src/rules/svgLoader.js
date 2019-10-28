@@ -1,10 +1,10 @@
 /**
- * @see https://webpack.js.org/loaders/svg-inline-loader/
+ * @see https://www.npmjs.com/package/@svgr/webpack
  */
 function svgLoader() {
   return {
     test: /\.svg$/,
-    loader: require.resolve('svg-inline-loader'),
+    use: [require.resolve('@svgr/webpack'), require.resolve('url-loader')],
   }
 }
 
