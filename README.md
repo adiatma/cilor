@@ -16,6 +16,7 @@
 + [x] support flow.
 + [x] support styled-components.
 + [x] support url-loader and file-loader
++ [x] support svgr/webpack loader
 + [ ] support alias import.
 + [ ] support eslint in develoment mode.
 + [ ] support monitoring assets.
