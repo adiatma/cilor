@@ -3,8 +3,9 @@ const TerserPlugin = require('terser-webpack-plugin')
 const createHTML = require('../plugins/createHTML')
 const babelLoader = require('../rules/babelLoader')
 const urlLoader = require('../rules/urlLoader')
+const svgLoader = require('../rules/svgLoader')
 const pathResolve = require('./pathResolve')
-const svgLoader = require('./rules/svgLoader')
+
 
 /**
  * Create webpack configuration.
