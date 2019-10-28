@@ -4,6 +4,7 @@ const createHTML = require('../plugins/createHTML')
 const babelLoader = require('../rules/babelLoader')
 const urlLoader = require('../rules/urlLoader')
 const pathResolve = require('./pathResolve')
+const svgLoader = require('./rules/svgLoader')
 
 /**
  * Create webpack configuration.
@@ -14,7 +15,7 @@ function createConfig(config, mode) {
   const defaultConfig = {
     mode: mode,
     module: {
-      rules: [babelLoader(mode), urlLoader()],
+      rules: [babelLoader(mode), urlLoader(), svgLoader()],
     },
     output: {
       path: config.output && config.output.path
