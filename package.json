@@ -1,6 +1,6 @@
 {
   "name": "@adiatma2019/cilor",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "main": "src/cilor.js",
   "license": "MIT",
   "bin": "./src/cilor.js",
