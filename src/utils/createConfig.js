@@ -26,7 +26,10 @@ function createConfig(config, mode) {
       publicPath: '/',
     },
     plugins: [createHTML(config.htmlConfig)],
-    entry: config.entry,
+    entry: [
+      require.resolve('regenerator-runtime'),
+      config.entry
+    ],
     optimization: {
       minimize: true,
       minimizer: [
