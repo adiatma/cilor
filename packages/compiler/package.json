@@ -1,0 +1,8 @@
+{
+  "name": "compiler",
+  "version": "0.0.1",
+  "description": "compiler of cilor",
+  "main": "index.js",
+  "author": "Adiatma Kamarudin <adiatma9024@gmail.com>",
+  "license": "MIT"
+}

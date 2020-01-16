@@ -1,0 +1,8 @@
+{
+  "name": "babel-config",
+  "version": "0.0.1",
+  "description": "babel configuration",
+  "main": "index.js",
+  "author": "Adiatma Kamarudin <adiatma9024@gmail.com>",
+  "license": "MIT"
+}

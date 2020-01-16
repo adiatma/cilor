@@ -34,9 +34,11 @@
     "development"
   ],
   "devDependencies": {
-    "jest": "24.9.0"
+    "jest": "24.9.0",
+    "lerna": "^3.20.2"
   },
   "scripts": {
     "test": "jest"
-  }
+  },
+  "workspaces": ["packages/*"]
 }
