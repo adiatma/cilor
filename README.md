@@ -8,10 +8,6 @@
 
 ## List Features
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 0f66a6b... docs: update readme
 + [x] support module hot replacement.
 + [x] support flow.
 + [x] support styled-components.
@@ -20,25 +16,6 @@
 + [ ] support alias import.
 + [ ] support eslint in develoment mode.
 + [ ] support monitoring assets.
-<<<<<<< HEAD
-=======
-[x] support module hot replacement.
-[x] support flow.
-[x] support styled-components.
-[] support eslint in develoment mode.
-[] support monitoring assets.
->>>>>>> aca8c4d... fix: bug
-=======
-[x] support module hot replacement.
-[x] support flow.
-[x] support styled-components.
-[ ] support eslint in develoment mode.
-[ ] support monitoring assets.
->>>>>>> 3c466df... docs: update readme
-=======
->>>>>>> 0f66a6b... docs: update readme
-
-## How to use?
 
 > Please install `react` and `react-dom` with `@adiatma2019/cilor`.
 
