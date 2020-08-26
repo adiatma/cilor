@@ -1,10 +1,6 @@
-# @adiatma2019/cilor
+# cilor
 
-![npm](https://img.shields.io/npm/dm/@adiatma2019/cilor)
-![dependencies](https://img.shields.io/librariesio/release/npm/@adiatma2019/cilor)
-![version](https://img.shields.io/npm/v/@adiatma2019/cilor)
-
-⚡️CLI to compile react project.
+⚡️ Simple CLI to compile react project.
 
 ## List Features
 
@@ -17,7 +13,7 @@
 + [ ] support eslint in develoment mode.
 + [ ] support monitoring assets.
 
-> Please install `react` and `react-dom` with `@adiatma2019/cilor`.
+> First, please install `react` and `react-dom`.
 
 ## Example.
 
@@ -28,13 +24,13 @@ cd react-project
 
 ## Install with yarn
 ```bash
-yarn add -D @adiatma2019/cilor
+yarn add -D cilor
 yarn add react react-dom
 ```
 ## Install with npm
 
 ```bash
-npm install --save-dev @adiatma2019/cilor
+npm install --save-dev cilor
 npm install react react-dom
 ```
 
@@ -95,7 +91,7 @@ And start with `yarn start` or `npm start` to running development server.
 ## How to add testing environment.
 Create `.babelrc.js`.
 ```js
-const babelConfig = require('@adiatma2019/cilor/src/babel-config')
+const babelConfig = require('cilor/src/babel-config')
 module.exports = babelConfig('__test__')
 ```
 
