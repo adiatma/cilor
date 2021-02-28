@@ -2,7 +2,7 @@
 
 ⚡️ Simple CLI to compile react project.
 
-## List Features
+## WIP
 
 + [x] support module hot replacement.
 + [x] support flow.
@@ -15,26 +15,21 @@
 
 > First, please install `react` and `react-dom`.
 
-## Example.
+## Usage
 
 ```bash
 mkdir react-project
 cd react-project
 ```
 
-## Install with yarn
+install dependencies
+
 ```bash
 yarn add -D cilor
 yarn add react react-dom
 ```
-## Install with npm
 
-```bash
-npm install --save-dev cilor
-npm install react react-dom
-```
-
-Create file `cilor.config.js` in your directory.
+create file `cilor.config.js` in your directory.
 
 ```js
 // cilor.config.js
@@ -55,7 +50,7 @@ module.exports = {
 }
 ```
 
-Create file `index.js`.
+create file `index.js`.
 
 ```js
 // index.js
@@ -75,7 +70,8 @@ const mountElement = document.getElementById('app')
 ReactDOM.render(<App />, mountElement)
 ```
 
-Open your `package.json`, and add this command below.
+open your `package.json`, and add this command below.
+
 ```json
 // package.json
 {
@@ -86,15 +82,13 @@ Open your `package.json`, and add this command below.
 }
 ```
 
-And start with `yarn start` or `npm start` to running development server.
+start with `yarn start` or `npm start` to running development server.
 
 ## How to add testing environment.
-Create `.babelrc.js`.
+
+Please create `.babelrc.js` in root project.
+
 ```js
 const babelConfig = require('cilor/src/babel-config')
 module.exports = babelConfig('__test__')
 ```
-
-## License
-
-![NPM](https://img.shields.io/npm/l/@adiatma2019/cilor)
