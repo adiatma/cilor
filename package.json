@@ -1,6 +1,6 @@
 {
   "name": "cilor",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "src/cilor.js",
   "license": "MIT",
   "bin": "./src/cilor.js",

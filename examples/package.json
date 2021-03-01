@@ -1,0 +1,17 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cilor": "^0.1.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "start": "cilor cilor.config.js",
+    "build": "cilor cilor.config.js build"
+  }
+}

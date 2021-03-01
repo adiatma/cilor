@@ -15,6 +15,8 @@
 
 > First, please install `react` and `react-dom`.
 
+Please check this [examples](./examples).
+
 ## Usage
 
 ```bash
